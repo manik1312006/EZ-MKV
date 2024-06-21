@@ -31,8 +31,7 @@ body{
 
 .list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
+    grid-template-columns: repeat(auto-fit, minmax(288px,1fr));
 }
 
 .list a{
@@ -61,19 +60,17 @@ body{
     box-shadow:10px 0px 100px rgb(0, 233, 213), 10px 0px 100px rgb(127, 7, 224);
     transition: all 0.5s;
 }
-
-@media screen and (max-width:1085px) {
-    .list{
-        grid-template-columns: repeat(3, 1fr);
-    }
+.paatal_lok{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
 }
-@media screen and (max-width:844px) {
-    .list{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (max-width:585px) {
-    .list{
-        grid-template-columns: repeat(1, 1fr);
-    }
+h1{
+    color: wheat;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bold;
 }
