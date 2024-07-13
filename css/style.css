@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+}
+
+.tdm{
+    position: fixed;
+    right: 5px;
+    bottom: 15px;
+}
+
+.tdm img{
+    width: 3rem;
+}
+
+.logo{
+    position: relative;
+    display: grid;
+    background-color: rgb(119, 0, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.logo .nam{
+    position: absolute;
+    right: 1rem;
+    align-self: center;
+    font-size: xx-large;
+}
+
+.logo .nam a{
+    text-decoration: none;
+    color: rgb(217, 250, 217);
+    cursor: pointer;
+}
+
+.logo img{
+    width: 60px;
+    margin: 0.25rem;
+    margin-left: 1rem;
+    display: inline;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px,1fr));
+    background-color: rgb(217, 250, 217);
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.list a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    text-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    gap: 0.5rem;
+    display: grid;
+    grid-template-rows: repeat(2);
+}
+
+.list a img{
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.list img:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.paatal_lok{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+h1{
+    color: wheat;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
