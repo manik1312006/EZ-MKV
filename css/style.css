@@ -42,7 +42,7 @@ body{
 
 .list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%,25%));
+    grid-template-columns: repeat(auto-fit, minmax(50%,1fr));
     background-color: rgb(217, 250, 217);
     margin: 1rem;
     border-radius: 10px;
