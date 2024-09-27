@@ -1,6 +1,7 @@
 body{
     background-color: black;
     z-index: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar{
@@ -121,10 +122,10 @@ h1{
 #menueshow{
     z-index: 1;
     background-color: transparent;
-    /* height: 100%; */
-    /* width: 40%; */
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 94%;
+    /* height: fit-content; */
+    /* width: fit-content; */
     position: absolute;
     right: 25px;
     margin-top: 18px;
