@@ -1,4 +1,6 @@
 const movies = [
+    { title: "Venom: The Last Dance HDTS [2024]", image: "https://m.media-amazon.com/images/M/MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Venom The Last Dance.html" },
+
     { title: "The Substance [2024]", image: "https://m.media-amazon.com/images/M/MV5BZjdlMjAxMGEtZjkzNy00NzI3LTllOWUtMmZkY2FjMjlmZDhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/The Substance.html" },
 
     { title: "Rose Rosy Te Gulaab [2024]", image: "https://m.media-amazon.com/images/M/MV5BNGE1MWNjZDYtOWZmNy00ZmQyLThjNTEtYTkzOTRkZjAzMjZiXkEyXkFqcGc@._V1_.jpg", link: "html/Rose Rosy Te Gulaab.html" },
@@ -27,17 +29,11 @@ const movies = [
 
     { title: "Bad Newz [2024] 1080p HDTS", image: "https://m.media-amazon.com/images/M/MV5BZjIzYjY3ZTQtNjA3Yi00MTFiLWExM2ItNjYxZmI1ZjcyMTYxXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Bad.Newz.2024.1080p.HDTS.mp4?alt=media&preload=none&autoplay=none&token=f1654047-9668-457f-90a1-441f3cf54386" },
 
-    {
-        title: "Tribhuvan Mishra CA Topper S01 Complete Series", image: "https://m.media-amazon.com/images/M/MV5BNTg0ZjhhMmQtNTQxYy00NWExLTg1MTgtM2IwZWU1ODE3NzdkXkEyXkFqcGc@._V1_.jpg", link: "https://drive.google.com/file/d/1Kj7bdHgBjVME_Zd5iqd42VHNhtOB5NfX/view?usp=drivesdk"
-    },
+    { title: "Tribhuvan Mishra CA Topper S01 Complete Series", image: "https://m.media-amazon.com/images/M/MV5BNTg0ZjhhMmQtNTQxYy00NWExLTg1MTgtM2IwZWU1ODE3NzdkXkEyXkFqcGc@._V1_.jpg", link: "https://drive.google.com/file/d/1Kj7bdHgBjVME_Zd5iqd42VHNhtOB5NfX/view?usp=drivesdk" },
 
-    {
-        title: "John Wick [01-04]", image: "https://imgs.search.brave.com/8xs0pTjkM7iaL0K6PM3OvYZGEJZQUVhbodbpQMhB-HM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxT2hYOXRicnNM/LmpwZw", link: "https://drive.google.com/drive/folders/1dEYDOV_bh9GQw8TVMrakpfl8py68C_Bg?usp=sharing"
-    },
+    { title: "John Wick [01-04]", image: "https://imgs.search.brave.com/8xs0pTjkM7iaL0K6PM3OvYZGEJZQUVhbodbpQMhB-HM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxT2hYOXRicnNM/LmpwZw", link: "https://drive.google.com/drive/folders/1dEYDOV_bh9GQw8TVMrakpfl8py68C_Bg?usp=sharing" },
 
-    {
-        title: "Wild Wild Punjab [2024]", image: "https://imgs.search.brave.com/QvbWfo8zvEV4IAxXgLHXL5Eue2uL-vGa9H_Y0DYv2Ng/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqQTNZMkUw/WlRFdE5qQmpNaTAw/Wm1Nd0xUa3habUl0/Wm1SaU9EazRZbU16/TldNeFhrRXlYa0Zx/Y0djQC5qcGc", link: "https://drive.google.com/file/d/1krqrk3-Hlb_T7oBPYN1yzOfrjSNxZa4U/view?usp=drive_link"
-    },
+    { title: "Wild Wild Punjab [2024]", image: "https://imgs.search.brave.com/QvbWfo8zvEV4IAxXgLHXL5Eue2uL-vGa9H_Y0DYv2Ng/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqQTNZMkUw/WlRFdE5qQmpNaTAw/Wm1Nd0xUa3habUl0/Wm1SaU9EazRZbU16/TldNeFhrRXlYa0Zx/Y0djQC5qcGc", link: "https://drive.google.com/file/d/1krqrk3-Hlb_T7oBPYN1yzOfrjSNxZa4U/view?usp=drive_link" },
 
     { title: "Mirzapur [S01 - S03]", image: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/mirzapur_cover.jpg?alt=media&token=13264250-dda5-4b3e-94b7-5aaff0df3005", link: "html/mirzapur.html" },
 
