@@ -1,4 +1,6 @@
 const movies = [
+    { title: "It's What's Inside [2024]", image: "https://m.media-amazon.com/images/M/MV5BNDkxOTZmZTYtYTNmNS00MDk3LWE0MDAtMzY5M2Y5YmU1MmI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Its%20Whats%20Inside%202024.mkv?alt=media&preload=none&token=54f92f08-04f9-4285-9c52-716bc9f6d8a5" },
+
     { title: "Venom: The Last Dance HDTS [2024]", image: "https://m.media-amazon.com/images/M/MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Venom The Last Dance.html" },
 
     { title: "The Substance [2024]", image: "https://m.media-amazon.com/images/M/MV5BZjdlMjAxMGEtZjkzNy00NzI3LTllOWUtMmZkY2FjMjlmZDhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/The Substance.html" },
