@@ -1,5 +1,13 @@
 const movies = [
-    { title: "It's What's Inside [2024]", image: "https://m.media-amazon.com/images/M/MV5BNDkxOTZmZTYtYTNmNS00MDk3LWE0MDAtMzY5M2Y5YmU1MmI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Its%20Whats%20Inside%202024.mkv?alt=media&preload=none&token=54f92f08-04f9-4285-9c52-716bc9f6d8a5" },
+    { title: "The Guilty [2021]", image: "https://m.media-amazon.com/images/M/MV5BZmVjNzM0YmItZGQwYy00MzA4LTkwYjAtMmJkNWVmOTRkZGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/the guilty.html" },
+
+    { title: "Life Like 2019 [English Only]", image: "https://m.media-amazon.com/images/M/MV5BMjU3ZDZmOWMtZjMzOS00ZjQxLThkNWQtNWEzZDcwZTczY2QxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/life like.html" },
+
+    { title: "Ramayana - The Legend of Prince Rama [1992]", image: "https://m.media-amazon.com/images/M/MV5BZWY1NTMwMTEtNjNiMi00YTkyLTlmYWEtOTQ5ZTg0YWY4ZTU0XkEyXkFqcGc@._V1_.jpg", link: "html/Ramayana - The Legend of Prince Rama.html" },
+
+    { title: "Do Patti [2024]", image: "https://m.media-amazon.com/images/M/MV5BZjRmMzA2MWYtZGEyMS00YjY4LWJiOTEtNjU1NWMyYTRjM2M3XkEyXkFqcGc@._V1_.jpg", link: "html/Do Patti.html" },
+
+    { title: "It's What's Inside [2024]", image: "https://m.media-amazon.com/images/M/MV5BNDkxOTZmZTYtYTNmNS00MDk3LWE0MDAtMzY5M2Y5YmU1MmI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/its whats inside.html" },
 
     { title: "Venom: The Last Dance HDTS [2024]", image: "https://m.media-amazon.com/images/M/MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Venom The Last Dance.html" },
 
