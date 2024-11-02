@@ -1,7 +1,9 @@
 const movies = [
-    { title: "Bhool Bhulaiyaa 3[2024]", image: "https://m.media-amazon.com/images/M/MV5BOTk1MDQxZTQtMTI0OC00ZTc5LTgxNjgtNzhmY2M4ZWY0OTgyXkEyXkFqcGc@._V1_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Bhool%20Bhulaiyaa%203%20(2024).mkv?alt=media&token=c4d20d90-9893-4cee-8009-f9162098b658" },
+    { title: "Dont Come Home[S01]", image: "https://m.media-amazon.com/images/M/MV5BNmE2YWY0ZTMtMmFkZi00OWJkLTljOGEtZWZjYmM2YmFlOWU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Dont Come Home.html" },
 
-    { title: "Singham Again[2024]", image: "https://m.media-amazon.com/images/M/MV5BMjQzZDExZDEtYjAxYy00ZGVhLWE4YWItNTVkZjA5ZjVjZWM3XkEyXkFqcGc@._V1_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Singham%20Again%20(2024).mkv?alt=media&token=6802808e-c050-4524-a93e-3cd298c18a1b" },
+    { title: "Bhool Bhulaiyaa 3[2024]", image: "https://m.media-amazon.com/images/M/MV5BOTk1MDQxZTQtMTI0OC00ZTc5LTgxNjgtNzhmY2M4ZWY0OTgyXkEyXkFqcGc@._V1_.jpg", link: "html/Bhool Bhulaiyaa 3.html" },
+
+    { title: "Singham Again[2024]", image: "https://m.media-amazon.com/images/M/MV5BMjQzZDExZDEtYjAxYy00ZGVhLWE4YWItNTVkZjA5ZjVjZWM3XkEyXkFqcGc@._V1_.jpg", link: "html/Singham Again.html" },
 
     { title: "The Guilty [2021]", image: "https://m.media-amazon.com/images/M/MV5BZmVjNzM0YmItZGQwYy00MzA4LTkwYjAtMmJkNWVmOTRkZGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/the guilty.html" },
 
