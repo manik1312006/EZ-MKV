@@ -1,4 +1,7 @@
 const movies = [
+
+     { title: "Pushpa 2:The Rule", image: "https://m.media-amazon.com/images/M/MV5BNmE2YWY0ZTMtMmFkZi00OWJkLTljOGEtZWZjYmM2YmFlOWU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Dont Come Home.html" },   
+    
     { title: "Dont Come Home[S01]", image: "https://m.media-amazon.com/images/M/MV5BNmE2YWY0ZTMtMmFkZi00OWJkLTljOGEtZWZjYmM2YmFlOWU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Dont Come Home.html" },
 
     { title: "Bhool Bhulaiyaa 3[2024]", image: "https://m.media-amazon.com/images/M/MV5BOTk1MDQxZTQtMTI0OC00ZTc5LTgxNjgtNzhmY2M4ZWY0OTgyXkEyXkFqcGc@._V1_.jpg", link: "html/Bhool Bhulaiyaa 3.html" },
