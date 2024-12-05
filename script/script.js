@@ -1,6 +1,6 @@
 const movies = [
 
-     { title: "Pushpa 2: The Rule", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWSPbqQJyb8ETlrfHLeBmCt8SZqNTMuyLWvt_1QqxZRE1yvFxg8PJOFm8X&s=10", link: "https://pixeldra.in/api/file/DaQt8M6U?download" },   
+     { title: "Pushpa 2: The Rule", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWSPbqQJyb8ETlrfHLeBmCt8SZqNTMuyLWvt_1QqxZRE1yvFxg8PJOFm8X&s=10", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Pushpa%202%20The%20Rule%202024.mkv?alt=media&token=3a407286-7548-42cb-ac3f-671d7744c174" },   
     
     { title: "Dont Come Home[S01]", image: "https://m.media-amazon.com/images/M/MV5BNmE2YWY0ZTMtMmFkZi00OWJkLTljOGEtZWZjYmM2YmFlOWU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Dont Come Home.html" },
 
