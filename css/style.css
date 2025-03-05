@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: #0f172a; /* Dark blue background */
+    color: #f8fafc;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -27,12 +27,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #7700ff;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed); /* Gradient header */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.2);
 }
 
 .logo {
@@ -57,9 +58,23 @@ header {
 }
 
 #search-input {
-    padding: 0.5rem;
+    padding: 0.8rem 1.2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#search-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+#search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 #search-button {
@@ -71,13 +86,13 @@ header {
 
 .movie-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #d9fad9; /* Greenish background */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #1e293b; /* Darker blue for content area */
     margin: 1rem;
-    border-radius: 10px;
-    border: 2px solid #7700ff;
+    border-radius: 15px;
+    border: 1px solid rgba(124, 58, 237, 0.3);
 }
 
 .movie-item {
@@ -87,24 +102,39 @@ header {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8fafc;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: #334155; /* Slate blue for cards */
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(124, 58, 237, 0.2);
+    background-color: #3b4d6b;
 }
 
 .movie-item img {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .movie-item span {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: #f8fafc;
+    font-weight: 500;
+    display: block;
+    text-align: center;
 }
 
-.telegram-link {
+/* .telegram-link {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -113,14 +143,59 @@ header {
 .telegram-link img {
     width: 48px;
     height: 48px;
-}
+} */
 
 @media (max-width: 600px) {
     .movie-list {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
     }
 
     .logo img{
         display: none;
     }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: #1e293b;
+    border-radius: 15px;
+    margin: 1rem;
+    border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.pagination-button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pagination-button:hover {
+    background-color: #6366f1;
+    transform: translateY(-2px);
+}
+
+.pagination-button.active {
+    background-color: #7c3aed;
+    font-weight: bold;
+}
+
+.pagination-prev,
+.pagination-next {
+    background-color: #334155;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+    background-color: #4b5563;
 }

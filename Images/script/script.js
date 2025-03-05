@@ -1,52 +1,83 @@
-const movies = [
-
-     { title: "Pushpa 2: The Rule", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWSPbqQJyb8ETlrfHLeBmCt8SZqNTMuyLWvt_1QqxZRE1yvFxg8PJOFm8X&s=10", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Pushpa%202%20The%20Rule%202024%20Print%20-%2002.mkv?alt=media&token=e32cb094-7e10-46d8-a84b-96a38cb450f4" },   
+const movies = [   
+    { 
+        title: "Your Friendly Neighborhood Spider-Man [S01]", 
+        image: "https://m.media-amazon.com/images/M/MV5BNjdiYjdmNGQtZTgzZC00MzgzLThkODctYzM4ZjRjOWJmNWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/Your Friendly Neighborhood Spider-Man.html" 
+    },
     
+    { 
+        title: "Tabaah [2024]", 
+        image: "https://m.media-amazon.com/images/M/MV5BZDExZWEwNzYtNjNhMi00ZmQ2LTg3OWYtOWY2MzJjN2VmM2JmXkEyXkFqcGc@._V1_.jpg",
+        link: "html/tabaah.html" 
+    },
+    
+    { 
+        title: "Max [2024]", 
+        image: "https://m.media-amazon.com/images/M/MV5BM2NmMzgwODctMzk0Yy00YmQ5LTgzY2EtYjRlMzJiNGVhZTlhXkEyXkFqcGc@._V1_.jpg",
+        link: "html/max_2024.html" 
+    },
+    
+    { 
+        title: "Marco [2024]", 
+        image: "https://m.media-amazon.com/images/M/MV5BNTVmNDVhMDEtNDMyNy00NTY0LWJkNzEtY2E5ZTVlZDRmYWY3XkEyXkFqcGc@._V1_.jpg",
+        link: "html/marco_2024.html" 
+    },
+    
+    { 
+        title: "High End Yaariyan [2019]", 
+        image: "https://m.media-amazon.com/images/M/MV5BODRlMTkwZGQtODg4Yi00ODAyLWE3OGItMTMxZDM5YmUzNWQ1XkEyXkFqcGc@._V1_.jpg",
+        link: "html/high_end_yaariyan.html" 
+    },
+    
+    { 
+        title: "Deva [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BMWQ2Mzc3OTItYzIzMi00ZDhhLTg2MjktMzhlNGQ4ZmI1MjIzXkEyXkFqcGc@._V1_.jpg",
+        link: "html/deva_2025.html" 
+    },
+    
+    { 
+        title: "Daredevil: Born Again [S01]", 
+        image: "https://upload.wikimedia.org/wikipedia/en/7/7d/Daredevil_Born_Again_season_1_poster.jpg",
+        link: "html/daredevil_born_again.html" 
+    },
+    
+    { 
+        title: "Crazxy [2024]", 
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Crazxy_poster.jpg/220px-Crazxy_poster.jpg",
+        link: "html/crazxy.html" 
+    },
+    
+    { 
+        title: "Chhaava [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BZTZiNDBhNjktMDE5NC00NTYxLThjNzQtYTU3NzYyNThiYTYzXkEyXkFqcGc@._V1_.jpg",
+        link: "html/chhaava_2025.html" 
+    },
+    
+    { 
+        title: "Captain America: Brave New World [2024]", 
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVQW-LtFbU3CWDVAenzAgY0iVt2OHb0E9Bg&s",
+        link: "html/captain_america_bnw.html" 
+    },
+    
+    { 
+        title: "Bloody Daddy [2023]", 
+        image: "https://m.media-amazon.com/images/M/MV5BNTFlMzkyOTgtMTU0OS00MzkwLWIzMGQtMmI3ZTU2OGJjYWVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/bloody_daddy.html" 
+    },
+    
+    { 
+        title: "Animal [2023]", 
+        image: "https://m.media-amazon.com/images/M/MV5BZThmNDg1NjUtNWJhMC00YjA3LWJiMjItNmM4ZDQ5ZGZiN2Y2XkEyXkFqcGc@._V1_.jpg",
+        link: "html/animal_2023.html" 
+    },
+
     { title: "Dont Come Home[S01]", image: "https://m.media-amazon.com/images/M/MV5BNmE2YWY0ZTMtMmFkZi00OWJkLTljOGEtZWZjYmM2YmFlOWU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Dont Come Home.html" },
-
-    { title: "Bhool Bhulaiyaa 3[2024]", image: "https://m.media-amazon.com/images/M/MV5BOTk1MDQxZTQtMTI0OC00ZTc5LTgxNjgtNzhmY2M4ZWY0OTgyXkEyXkFqcGc@._V1_.jpg", link: "html/Bhool Bhulaiyaa 3.html" },
-
-    { title: "Singham Again[2024]", image: "https://m.media-amazon.com/images/M/MV5BMjQzZDExZDEtYjAxYy00ZGVhLWE4YWItNTVkZjA5ZjVjZWM3XkEyXkFqcGc@._V1_.jpg", link: "html/Singham Again.html" },
-
-    { title: "The Guilty [2021]", image: "https://m.media-amazon.com/images/M/MV5BZmVjNzM0YmItZGQwYy00MzA4LTkwYjAtMmJkNWVmOTRkZGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/the guilty.html" },
-
-    { title: "Life Like 2019 [English Only]", image: "https://m.media-amazon.com/images/M/MV5BMjU3ZDZmOWMtZjMzOS00ZjQxLThkNWQtNWEzZDcwZTczY2QxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/life like.html" },
-
-    { title: "Ramayana - The Legend of Prince Rama [1992]", image: "https://m.media-amazon.com/images/M/MV5BZWY1NTMwMTEtNjNiMi00YTkyLTlmYWEtOTQ5ZTg0YWY4ZTU0XkEyXkFqcGc@._V1_.jpg", link: "html/Ramayana - The Legend of Prince Rama.html" },
-
-    { title: "Do Patti [2024]", image: "https://m.media-amazon.com/images/M/MV5BZjRmMzA2MWYtZGEyMS00YjY4LWJiOTEtNjU1NWMyYTRjM2M3XkEyXkFqcGc@._V1_.jpg", link: "html/Do Patti.html" },
-
-    { title: "It's What's Inside [2024]", image: "https://m.media-amazon.com/images/M/MV5BNDkxOTZmZTYtYTNmNS00MDk3LWE0MDAtMzY5M2Y5YmU1MmI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/its whats inside.html" },
-
-    { title: "Venom: The Last Dance HDTS [2024]", image: "https://m.media-amazon.com/images/M/MV5BZDMyYWU4NzItZDY0MC00ODE2LTkyYTMtMzNkNDdmYmFhZDg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Venom The Last Dance.html" },
-
-    { title: "The Substance [2024]", image: "https://m.media-amazon.com/images/M/MV5BZjdlMjAxMGEtZjkzNy00NzI3LTllOWUtMmZkY2FjMjlmZDhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/The Substance.html" },
-
-    { title: "Rose Rosy Te Gulaab [2024]", image: "https://m.media-amazon.com/images/M/MV5BNGE1MWNjZDYtOWZmNy00ZmQyLThjNTEtYTkzOTRkZjAzMjZiXkEyXkFqcGc@._V1_.jpg", link: "html/Rose Rosy Te Gulaab.html" },
-
-    { title: "Joker Folie a Deux [2024] HDTS", image: "https://m.media-amazon.com/images/M/MV5BMjRmOWFiMmEtNDYxYy00YzcyLWIxM2ItNjY3ZjU3MWM4MDJmXkEyXkFqcGdeQXVyMTU5OTc2NTk@._V1_FMjpg_UX1000_.jpg", link: "html/Joker Folie a Deux.html" },
-
-    { title: "Taaza Khabar S02 [2024]", image: "https://imgs.search.brave.com/armwLomNj_5VBbFzYhOdOj0RyZZZfUJ4MxWmVTGkWZk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk5qQXpNREV6/Wm1VdFlqZ3pNeTAw/TlRZeExXSmxPREl0/WVRNeVpHSTRZemRt/WkdZNFhrRXlYa0Zx/Y0djQC5qcGc", link: "html/Taaza_Khabar_S02.html" },
-
-    { title: "The Exorcist: Believer [2023]", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMqidJLh-50JGEcfumYuExyQMPsTyH2lI3P2Y6vAi17h_WkNEkh6OtlPI&s=10", link: "https://drive.google.com/file/d/1zYAb6jYLWG68NZi3Ww5S0IBStYV9Y5R0/view?usp=drivesdk" },
-
-    { title: "The Social Network [2010]", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJcqeh6yTG4NIKZg4p2eBCQewQFVuE-VghQY5R9zwdatciGh7E_RCTuXD&s=10", link: "https://drive.google.com/file/d/1FcCqeceD8FszOQQiIvWD561gxWHh1nzf/view?usp=drivesdk" },
 
     { title: "Maestro [2021] Watch Online YouTube(No-Ads)", image: "https://m.media-amazon.com/images/M/MV5BOGE4NjBhNDMtYWU4ZS00YjFkLWE0YmMtYjhmNTAyMTZkM2Q1XkEyXkFqcGdeQXVyMTA1MTMwNDc@._V1_FMjpg_UX960_.jpg", link: "html/maestro.html" },
 
-    { title: "Alien:Romulus [2024] HDTS", image: "https://imgs.search.brave.com/tidiFeoEtsUCutH4NfhyO_LJ_bKn7Ai6DBnlVb1TecY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1EVTBOamN3/T0dRdE5qTmpPUzAw/TnpRM0xXSXdNMll0/WVdWbU9EWmpNelF6/TjJFeFhrRXlYa0Zx/Y0djQC5qcGc", link: "html/Alien_Romulus.html" },
-
-    { title: "Inside Out 2 [2024] WEBRIP", image: "https://imgs.search.brave.com/R8XdooS_Ua6kRHVI2IVW3v0CrwEi3aeFSTaPqpYYRfs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sdW1p/ZXJlLWEuYWthbWFp/aGQubmV0L3YxL2lt/YWdlcy9wX2luc2lk/ZW91dDJfdjNfNzk4/X2YyNDg4MzczLmpw/ZWc", link: "html/inside_out_2.html" },
-
-    { title: "Double iSmart [2024] HDCAM", image: "https://m.media-amazon.com/images/M/MV5BYzUwNzc3YzUtOGE4Ni00M2MwLTljYzctY2EyMmExNmUzZmM4XkEyXkFqcGc@._V1_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Double%20iSmart%20%5B2024%5D%20HQ.mp4?alt=media&preload=none&autoplay=none&token=a3c01e22-eae4-4ff7-ba21-dc5ad75b7d3f" },
-
     { title: "Stree 2 [2024] WEBRIP", image: "https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://pixeldra.in/api/file/2oG6cdMe?download" },
 
-    { title: "Phir Aayi Hasseen Dillruba [2024]", image: "https://m.media-amazon.com/images/M/MV5BYmM5Zjc2ZmMtOWIwMy00OWY4LTkzZmQtODA5NTVlNDFlNGZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Phir.Aayi.Hasseen.Dillruba.2024.1080p.mp4?alt=media&preload=none&autoplay=none&token=f2e32056-a9ce-46d9-92f2-efbce8c906d1" },
-
-    { title: "Deadpool And Wolverine [2024] HDTS 1080p Hindi", image: "https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://drive.google.com/file/d/1uS1fvM1TAj0uloAwR1gZsfEEp18ESvd9/view?usp=drive_link" },
-
-    { title: "Bad Newz [2024] 1080p HDTS", image: "https://m.media-amazon.com/images/M/MV5BZjIzYjY3ZTQtNjA3Yi00MTFiLWExM2ItNjYxZmI1ZjcyMTYxXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Bad.Newz.2024.1080p.HDTS.mp4?alt=media&preload=none&autoplay=none&token=f1654047-9668-457f-90a1-441f3cf54386" },
+    { title: "Deadpool And Wolverine [2024] HDTS 1080p Hindi", image: "https://m.media-amazon.com/images/M/MV5BZTk5ODY0MmQtMzA3Ni00NGY1LThiYzItZThiNjFiNDM4MTM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://drive.google.com/file/d/1uS1fvM1TAj0uloAwR1gZsfEEp18ESvd9/view?usp=drive_link" },
 
     { title: "Tribhuvan Mishra CA Topper S01 Complete Series", image: "https://m.media-amazon.com/images/M/MV5BNTg0ZjhhMmQtNTQxYy00NWExLTg1MTgtM2IwZWU1ODE3NzdkXkEyXkFqcGc@._V1_.jpg", link: "https://drive.google.com/file/d/1Kj7bdHgBjVME_Zd5iqd42VHNhtOB5NfX/view?usp=drivesdk" },
 
@@ -54,17 +85,11 @@ const movies = [
 
     { title: "Wild Wild Punjab [2024]", image: "https://imgs.search.brave.com/QvbWfo8zvEV4IAxXgLHXL5Eue2uL-vGa9H_Y0DYv2Ng/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqQTNZMkUw/WlRFdE5qQmpNaTAw/Wm1Nd0xUa3habUl0/Wm1SaU9EazRZbU16/TldNeFhrRXlYa0Zx/Y0djQC5qcGc", link: "https://drive.google.com/file/d/1krqrk3-Hlb_T7oBPYN1yzOfrjSNxZa4U/view?usp=drive_link" },
 
-    { title: "Mirzapur [S01 - S03]", image: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/mirzapur_cover.jpg?alt=media&token=13264250-dda5-4b3e-94b7-5aaff0df3005", link: "html/mirzapur.html" },
-
-    { title: "Jatt And Juliet 3 [2024]", image: "https://imgs.search.brave.com/E9gzkDYN9uUsW71U1wGCTPqvFVC0SWcXcYjxWE8xv0U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpHUTFaREEz/WlRBdE5tVXdNeTAw/Wmpjd0xUbGpOV0l0/WVRneVptSmpNVEJq/TkRnM1hrRXlYa0Zx/Y0djQC5qcGc", link: "html/jatt_juliet_3.html" },
-
     { title: "Kalki 2898 AD [2024] HDTS", image: "https://imgs.search.brave.com/Edd2DWH-ffzZw799_iOK4UXV6r6YRvUQGJ_7v-99SyU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/a2Fsa2ktMjg5OC1h/ZC0yMDI0LXJldmll/dy1kaXNjdXNzaW9u/LXRocmVhZC1zcG9p/bGVycy1tdXN0LXYw/LWtpcXAzMWhkd2F6/YzEuanBnP3dpZHRo/PTI2MjImZm9ybWF0/PXBqcGcmYXV0bz13/ZWJwJnM9NjhkYmEz/ZTFhNGFiMTc0YmVh/ODVmM2FmMzU2MmRm/N2UwN2NkNzU3Ng", link: "https://drive.google.com/file/d/1Ub60Brk7FmMeFyOsmaRc5gf201BW8IgY/view?usp=sharing" },
 
     { title: "Predestination [2014]", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfDT-qjcmY49gNGs9YVZ_qmVuQt7sRSq5UNQvGiCRQRtHsXXxQvAJ9kUte&s=10", link: "https://drive.google.com/file/d/1YZ_zKWXtPXYF-PWZBA8xYNsoTTycwjSB/view?usp=drive_link" },
 
     { title: "Maharaja [2024]", image: "https://m.media-amazon.com/images/M/MV5BZDJjNzdkNmItZDExMy00NzA3LWE3YzEtM2U3ZGRjMThlMDU2XkEyXkFqcGc@._V1_.jpg", link: "https://drive.google.com/file/d/1RsT8If-7XyTFfkhyHT_7SGcv5r5JaU4A/view?usp=drive_link" },
-
-    { title: "Paatal Lok [2020]", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HM_HxpovQ3vs1e2fpyxSF_kdfpT00belw3_bUNUGnjg3_ZtmgKcLwA8fDhQ-nlBWT6g&usqp=CAU", link: "html/paatal_lok.html" },
 
     { title: "Murder Mubarak [2024]", image: "https://m.media-amazon.com/images/M/MV5BNTNiZDUwYmYtNTY5ZC00ZTRlLWJhODAtOThmMjM2MTUwNWVhXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg", link: "https://drive.google.com/file/d/16NU4MKekbg9q-aTKFIO2O3L7ercbAR4Q/view?usp=sharing" },
 
@@ -76,7 +101,7 @@ const movies = [
 
     { title: "The Boys Season [01-04]", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyafFY5Ymox_DJdkDQXOdSOQBe8pIUmKBnkQ&s", link: "https://drive.google.com/drive/folders/1-PDgdUcAIzjvzfHMRTHipsURjSMIU8pW?usp=sharing" },
 
-    { title: "Scam 1992", image: "https://m.media-amazon.com/images/M/MV5BNjgxZTMxNmQtZGFkZS00NDUyLTllMzYtOTE0ZjdlMjM1ZWU0XkEyXkFqcGdeQXVyMTAyMTE1MDA1._V1_.jpg", link: "https://drive.google.com/drive/folders/1013HGTinT4EJg3JTjQe6apRxfmz8TRyH?usp=sharing" },
+    { title: "Scam 1992", image: "https://m.media-amazon.com/images/M/MV5BNGRkOTVjODgtNTBmZS00MDQ3LWE3ZjQtM2ZiNDQ3OWJkMjM2XkEyXkFqcGc@._V1_.jpg", link: "https://drive.google.com/drive/folders/1013HGTinT4EJg3JTjQe6apRxfmz8TRyH?usp=sharing" },
 
     { title: "Ready Player One [2018]", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiA5HJdXUSKxFZ-tERBA5WEpZGIfG9TataA&s", link: "https://drive.google.com/file/d/1Dn_sneL3TB93-_ODxGVj7K8WAEjOMW-U/view?usp=sharing" },
 
@@ -104,11 +129,12 @@ const movies = [
 
     { title: "B & B: Bujji and Bhairava [2024]", image: "https://upload.wikimedia.org/wikipedia/en/e/ea/Bujji_and_Bhairava_poster.jpg", link: "https://drive.google.com/file/d/1hNEiwZYNzaTl7344b8lkuvzHQL9stUK_/view?usp=drive_link" },
 
-    { title: "Brightburn [2019]", image: "https://m.media-amazon.com/images/M/MV5BMjc0YzM2ZjItNzE3OS00NTRhLTkyNTUtMjY5Y2Y5NTU3OWI0XkEyXkFqcGdeQXVyNjU2NTI4MjE@._V1_FMjpg_UX1000_.jpg", link: "https://firebasestorage.googleapis.com/v0/b/ip-tv-1312.appspot.com/o/Brightburn.2019.1080p.Hindi.English.webm?alt=media&preload=metadata&autoplay=none&token=883d5cad-34ad-497c-9e8c-5a3fe58508e8" },
-
 
     // Add more movies here...
 ];
+
+const MOVIES_PER_PAGE = 30;
+let currentPage = 1;
 
 const movieList = document.getElementById('movie-list');
 const searchInput = document.getElementById('search-input');
@@ -126,10 +152,63 @@ function createMovieElement(movie) {
 }
 
 function displayMovies(moviesToShow) {
+    const startIndex = (currentPage - 1) * MOVIES_PER_PAGE;
+    const endIndex = startIndex + MOVIES_PER_PAGE;
+    const paginatedMovies = moviesToShow.slice(startIndex, endIndex);
+    
     movieList.innerHTML = '';
-    moviesToShow.forEach(movie => {
+    paginatedMovies.forEach(movie => {
         movieList.appendChild(createMovieElement(movie));
     });
+
+    // Update pagination
+    updatePagination(moviesToShow.length);
+}
+
+function updatePagination(totalMovies) {
+    const totalPages = Math.ceil(totalMovies / MOVIES_PER_PAGE);
+    const paginationContainer = document.getElementById('pagination');
+    paginationContainer.innerHTML = '';
+
+    // Previous button
+    if (currentPage > 1) {
+        const prevButton = createPaginationButton('Previous', currentPage - 1);
+        prevButton.classList.add('pagination-prev');
+        paginationContainer.appendChild(prevButton);
+    }
+
+    // Page numbers
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = createPaginationButton(i, i);
+        if (i === currentPage) {
+            pageButton.classList.add('active');
+        }
+        paginationContainer.appendChild(pageButton);
+    }
+
+    // Next button
+    if (currentPage < totalPages) {
+        const nextButton = createPaginationButton('Next', currentPage + 1);
+        nextButton.classList.add('pagination-next');
+        paginationContainer.appendChild(nextButton);
+    }
+}
+
+// Update the createPaginationButton function
+function createPaginationButton(text, pageNumber) {
+    const button = document.createElement('button');
+    button.textContent = text;
+    button.classList.add('pagination-button');
+    button.addEventListener('click', () => {
+        currentPage = pageNumber;
+        filterMovies();
+        // Scroll to top of the page smoothly
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    return button;
 }
 
 function filterMovies() {
