@@ -14,7 +14,8 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-/*     padding-top: 56.25%; 16:9 Aspect Ratio */
+    height: 100%;
+    padding: 1rem;
     background: #000;
     border-radius: 10px;
 /*     overflow: hidden; */
