@@ -59,7 +59,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     border: none;
     outline: none;
-    object-fit: cover;
+    object-fit: none;
 }
 
 video::-webkit-media-controls-panel {
