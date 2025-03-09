@@ -1,5 +1,11 @@
 const movies = [   
     { 
+        title: "Fateh 2025", 
+        image: "https://m.media-amazon.com/images/M/MV5BOTFhNWZmZDEtZGU3Zi00Njc2LTgzOTMtZTU4NWQzYTNlOGNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/Fateh_2025.html" 
+    },
+    
+    { 
         title: "Your Friendly Neighborhood Spider-Man [S01]", 
         image: "https://m.media-amazon.com/images/M/MV5BNjdiYjdmNGQtZTgzZC00MzgzLThkODctYzM4ZjRjOWJmNWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         link: "html/Your Friendly Neighborhood Spider-Man.html" 
