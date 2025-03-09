@@ -41,7 +41,7 @@ body {
     height: 100%;
     border: none;
     outline: none;
-/*     object-fit: cover; */
+    object-fit: cover;
 }
 
 video::-webkit-media-controls-panel {
