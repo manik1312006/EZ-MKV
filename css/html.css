@@ -14,10 +14,10 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+/*     padding-top: 56.25%; 16:9 Aspect Ratio */
     background: #000;
     border-radius: 10px;
-    overflow: hidden;
+/*     overflow: hidden; */
     box-shadow: 0 0 50px rgba(123, 85, 228, 0.3),
                0 0 100px rgba(74, 203, 235, 0.2);
     margin-bottom: 1rem;
@@ -41,7 +41,7 @@ body {
     height: 100%;
     border: none;
     outline: none;
-    object-fit: cover;
+/*     object-fit: cover; */
 }
 
 video::-webkit-media-controls-panel {
