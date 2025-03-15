@@ -14,7 +14,8 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    height: auto; /* Ensure the height adjusts automatically */
+    height: 0; /* Use padding-bottom for aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     background: #000;
     border-radius: 10px;
     overflow: hidden;
@@ -23,43 +24,24 @@ body {
     margin-bottom: 1rem;
 }
 
-/* .video-container::before {
-    content: "Loading...";
+.video-container video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #f8fafc;
-    z-index: 1;
-} */
-
-.video-container:fullscreen {
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    border: none;
+    outline: none;
+    object-fit: cover; /* Cover the entire container */
 }
 
-.video-container:-webkit-full-screen {
-    width: 100%;
-    height: 100%;
-}
-
-.video-container:-moz-full-screen {
-    width: 100%;
-    height: 100%;
-}
-
+/* Use a single media query for fullscreen */
+.video-container:fullscreen,
+.video-container:-webkit-full-screen,
+.video-container:-moz-full-screen,
 .video-container:-ms-fullscreen {
     width: 100%;
     height: 100%;
-
-}
-
-.video-container video {
-    width: 100%; /* Ensure the video takes full width */
-    height: auto; /* Maintain aspect ratio */
-    border: none;
-    outline: none;
-    object-fit: none;
 }
 
 video::-webkit-media-controls-panel {
@@ -168,3 +150,4 @@ hr {
         font-size: 1.2rem;
     }
 }
+

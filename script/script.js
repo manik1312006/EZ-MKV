@@ -1,80 +1,129 @@
-const movies = [   
+const movies = [
+
+    // Add more movies here...
+
     { 
-        title: "Fateh 2025", 
-        image: "https://m.media-amazon.com/images/M/MV5BOTFhNWZmZDEtZGU3Zi00Njc2LTgzOTMtZTU4NWQzYTNlOGNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        link: "html/Fateh_2025.html" 
+        title: "Aghathiyaa [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BNjc5MmMwN2MtODllZi00MWYwLWFmYWItMjViOTFmYWM3ZmUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/aghathiyaa_2025.html" 
     },
-    
+
     { 
-        title: "Your Friendly Neighborhood Spider-Man [S01]", 
+        title: "Badnaam [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BZWRhMjY3M2MtZWVmNC00MDlmLTg5NTAtMzE4MDYxY2ExMWYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/badnaam_2025.html" 
+    },
+
+    { 
+        title: "Diplomat [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BNGI4M2U0YTYtMmExZi00YWNkLThjMDEtMmRmOGVlNmMwZmVjXkEyXkFqcGc@._V1_.jpg",
+        link: "html/diplomat_2025.html" 
+    },
+
+    { 
+        title: "Fateh [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BOTFhNWZmZDEtZGU3Zi00Njc2LTgzOTMtZTU4NWQzYTNlOGNkXkEyXkFqcGc@._V1_.jpg",
+        link: "html/fateh_2025.html" 
+    },
+
+    { 
+        title: "The Fast And The Furious (2001)", 
+        image: "https://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZS00YjE4LWI1ODQtNjRkZGZlOTg2MGE1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/the_fast_and_the_furious.html" 
+    },
+
+    {   title: "2 Fast 2 Furious (2003)",
+        image: "https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/2_fast_2_furious.html" },
+
+    { 
+        title: "The Fast And The Furious: Tokyo Drift (2006)", 
+        image: "https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_.jpg",
+        link: "html/The Fast And The Furious Tokyo Drift.html" 
+    },
+
+    { 
+        title: "The Witch (2015)", 
+        image: "https://m.media-amazon.com/images/M/MV5BMTUyNzkwMzAxOF5BMl5BanBnXkFtZTgwMzc1OTk1NjE@._V1_FMjpg_UX1000_.jpg",
+        link: "html/the_witch_2015.html" 
+    },
+
+    { 
+        title: "Sting (2024)", 
+        image: "https://m.media-amazon.com/images/M/MV5BNmY4NjAwM2YtMzA1NS00ZDJjLTlmOWUtODY5MzY0NDdlMDljXkEyXkFqcGc@._V1_.jpg",
+        link: "html/sting_2024.html" 
+    },
+
+    {
+        title: "Your Friendly Neighborhood Spider-Man [S01]",
         image: "https://m.media-amazon.com/images/M/MV5BNjdiYjdmNGQtZTgzZC00MzgzLThkODctYzM4ZjRjOWJmNWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        link: "html/Your Friendly Neighborhood Spider-Man.html" 
+        link: "html/Your Friendly Neighborhood Spider-Man.html"
     },
-    
-    { 
-        title: "Tabaah [2024]", 
+
+    {
+        title: "Tabaah [2024]",
         image: "https://m.media-amazon.com/images/M/MV5BZDExZWEwNzYtNjNhMi00ZmQ2LTg3OWYtOWY2MzJjN2VmM2JmXkEyXkFqcGc@._V1_.jpg",
-        link: "html/tabaah.html" 
+        link: "html/tabaah.html"
     },
-    
-    { 
-        title: "Max [2024]", 
+
+    {
+        title: "Max [2024]",
         image: "https://m.media-amazon.com/images/M/MV5BM2NmMzgwODctMzk0Yy00YmQ5LTgzY2EtYjRlMzJiNGVhZTlhXkEyXkFqcGc@._V1_.jpg",
-        link: "html/max_2024.html" 
+        link: "html/max_2024.html"
     },
-    
-    { 
-        title: "Marco [2024]", 
+
+    {
+        title: "Marco [2024]",
         image: "https://m.media-amazon.com/images/M/MV5BNTVmNDVhMDEtNDMyNy00NTY0LWJkNzEtY2E5ZTVlZDRmYWY3XkEyXkFqcGc@._V1_.jpg",
-        link: "html/marco_2024.html" 
+        link: "html/marco_2024.html"
     },
-    
-    { 
-        title: "High End Yaariyan [2019]", 
+
+    {
+        title: "High End Yaariyan [2019]",
         image: "https://m.media-amazon.com/images/M/MV5BODRlMTkwZGQtODg4Yi00ODAyLWE3OGItMTMxZDM5YmUzNWQ1XkEyXkFqcGc@._V1_.jpg",
-        link: "html/high_end_yaariyan.html" 
+        link: "html/high_end_yaariyan.html"
     },
-    
-    { 
-        title: "Deva [2025]", 
+
+    {
+        title: "Deva [2025]",
         image: "https://m.media-amazon.com/images/M/MV5BMWQ2Mzc3OTItYzIzMi00ZDhhLTg2MjktMzhlNGQ4ZmI1MjIzXkEyXkFqcGc@._V1_.jpg",
-        link: "html/deva_2025.html" 
+        link: "html/deva_2025.html"
     },
-    
-    { 
-        title: "Daredevil: Born Again [S01]", 
+
+    {
+        title: "Daredevil: Born Again [S01]",
         image: "https://upload.wikimedia.org/wikipedia/en/7/7d/Daredevil_Born_Again_season_1_poster.jpg",
-        link: "html/daredevil_born_again.html" 
+        link: "html/daredevil_born_again.html"
     },
-    
-    { 
-        title: "Crazxy [2024]", 
+
+    {
+        title: "Crazxy [2024]",
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Crazxy_poster.jpg/220px-Crazxy_poster.jpg",
-        link: "html/crazxy.html" 
+        link: "html/crazxy.html"
     },
-    
-    { 
-        title: "Chhaava [2025]", 
+
+    {
+        title: "Chhaava [2025]",
         image: "https://m.media-amazon.com/images/M/MV5BZTZiNDBhNjktMDE5NC00NTYxLThjNzQtYTU3NzYyNThiYTYzXkEyXkFqcGc@._V1_.jpg",
-        link: "html/chhaava_2025.html" 
+        link: "html/chhaava_2025.html"
     },
-    
-    { 
-        title: "Captain America: Brave New World [2024]", 
+
+    {
+        title: "Captain America: Brave New World [2024]",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVQW-LtFbU3CWDVAenzAgY0iVt2OHb0E9Bg&s",
-        link: "html/captain_america_bnw.html" 
+        link: "html/captain_america_bnw.html"
     },
-    
-    { 
-        title: "Bloody Daddy [2023]", 
+
+    {
+        title: "Bloody Daddy [2023]",
         image: "https://m.media-amazon.com/images/M/MV5BNTFlMzkyOTgtMTU0OS00MzkwLWIzMGQtMmI3ZTU2OGJjYWVjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        link: "html/bloody_daddy.html" 
+        link: "html/bloody_daddy.html"
     },
-    
-    { 
-        title: "Animal [2023]", 
+
+    {
+        title: "Animal [2023]",
         image: "https://m.media-amazon.com/images/M/MV5BZThmNDg1NjUtNWJhMC00YjA3LWJiMjItNmM4ZDQ5ZGZiN2Y2XkEyXkFqcGc@._V1_.jpg",
-        link: "html/animal_2023.html" 
+        link: "html/animal_2023.html"
     },
 
     { title: "Dont Come Home[S01]", image: "https://m.media-amazon.com/images/M/MV5BNmE2YWY0ZTMtMmFkZi00OWJkLTljOGEtZWZjYmM2YmFlOWU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "html/Dont Come Home.html" },
@@ -135,12 +184,11 @@ const movies = [
 
     { title: "B & B: Bujji and Bhairava [2024]", image: "https://upload.wikimedia.org/wikipedia/en/e/ea/Bujji_and_Bhairava_poster.jpg", link: "https://drive.google.com/file/d/1hNEiwZYNzaTl7344b8lkuvzHQL9stUK_/view?usp=drive_link" },
 
-
-    // Add more movies here...
 ];
 
 const MOVIES_PER_PAGE = 30;
-let currentPage = 1;
+// Get currentPage from localStorage or default to 1
+let currentPage = parseInt(localStorage.getItem('currentPage')) || 1;
 
 const movieList = document.getElementById('movie-list');
 const searchInput = document.getElementById('search-input');
@@ -200,13 +248,14 @@ function updatePagination(totalMovies) {
     }
 }
 
-// Update the createPaginationButton function
 function createPaginationButton(text, pageNumber) {
     const button = document.createElement('button');
     button.textContent = text;
     button.classList.add('pagination-button');
     button.addEventListener('click', () => {
         currentPage = pageNumber;
+        // Store current page in localStorage
+        localStorage.setItem('currentPage', currentPage);
         filterMovies();
         // Scroll to top of the page smoothly
         window.scrollTo({
@@ -225,11 +274,21 @@ function filterMovies() {
     displayMovies(filteredMovies);
 }
 
-searchInput.addEventListener('input', filterMovies);
-searchButton.addEventListener('click', filterMovies);
+// Event listeners
+searchInput.addEventListener('input', () => {
+    currentPage = 1; // Reset to first page on search
+    localStorage.setItem('currentPage', currentPage);
+    filterMovies();
+});
 
-// Initial display of all movies
-displayMovies(movies);
+searchButton.addEventListener('click', () => {
+    currentPage = 1; // Reset to first page on search button click
+    localStorage.setItem('currentPage', currentPage);
+    filterMovies();
+});
+
+// Initial display of movies
+filterMovies();
 
 // Inspect Blocker
 
