@@ -3,6 +3,30 @@ const movies = [
     // Add more movies here...
 
     { 
+        title: "Mithde [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_FMjpg_UX1000_.jpg",
+        link: "html/Mithde 2025.html" 
+    },
+    
+    { 
+        title: "Fast And Furious 6 [2013]", 
+        image: "https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_FMjpg_UX1000_.jpg",
+        link: "html/Fast And Furious 6 2013.html" 
+    },
+    
+    { 
+        title: "Fast Five [2011]", 
+        image: "https://m.media-amazon.com/images/M/MV5BMTUxNTk5MTE0OF5BMl5BanBnXkFtZTcwMjA2NzY3NA@@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
+        link: "html/Fast Five 2011.html" 
+    },
+    
+    { 
+        title: "Fast & Furious [2009]", 
+        image: "https://m.media-amazon.com/images/M/MV5BM2Y1YzhkNzUtMzhmZC00OTFkLWJjZDktMWYzZmQ0Y2Y5ODcwXkEyXkFqcGc@._V1_.jpg",
+        link: "html/Fast & Furious 2009.html" 
+    },
+    
+    { 
         title: "Aghathiyaa [2025]", 
         image: "https://m.media-amazon.com/images/M/MV5BNjc5MmMwN2MtODllZi00MWYwLWFmYWItMjViOTFmYWM3ZmUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         link: "html/aghathiyaa_2025.html" 
