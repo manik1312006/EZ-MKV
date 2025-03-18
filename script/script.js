@@ -4,7 +4,7 @@ const movies = [
 
     { 
         title: "Mithde [2025]", 
-        image: "https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_FMjpg_UX1000_.jpg",
+        image: "https://m.media-amazon.com/images/M/MV5BOWQ1ZTE0NTMtMGYzZC00NDI5LTlkNDMtZGNkNWY4MjhiYzVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         link: "html/Mithde 2025.html" 
     },
     
