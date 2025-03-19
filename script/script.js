@@ -3,6 +3,18 @@ const movies = [
     // Add more movies here...
 
     { 
+        title: "Tumbbad [2018]", 
+        image: "https://m.media-amazon.com/images/M/MV5BOTY0YzY3MTMtOWQ5Yi00ODY2LThhOGMtMzFlMjhlODcxOGU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        link: "html/Tumbbad 2018.html" 
+    },
+    
+    { 
+        title: "The Electric State [2025]", 
+        image: "https://m.media-amazon.com/images/M/MV5BMjQ1MTYzZmItMTkzYy00NzdmLTlhYmMtMzk5YjhiOThmZDgwXkEyXkFqcGc@._V1_.jpg",
+        link: "html/The Electric State 2025.html" 
+    },
+    
+    { 
         title: "Mithde [2025]", 
         image: "https://m.media-amazon.com/images/M/MV5BOWQ1ZTE0NTMtMGYzZC00NDI5LTlkNDMtZGNkNWY4MjhiYzVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         link: "html/Mithde 2025.html" 
